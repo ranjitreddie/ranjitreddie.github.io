@@ -1,237 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ranjith Velpur – Senior Java Backend / Cloud Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjith Velpur - Senior Java Backend / Cloud Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a class="logo" href="#home">RV</a>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="container">
-      <p class="greeting">Hi, I'm</p>
-      <h1>Ranjith Velpur</h1>
-      <p class="hero-sub">Senior Java Backend / Cloud Engineer building high-throughput, cloud-native microservices at scale. Specialized in Spring Boot, Kafka, AWS/Kubernetes, and PCI-compliant security — delivering 99.9%+ uptime across Mastercard, Nike, and JP Morgan Chase.</p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-outline">Get In Touch</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p class="about-text">
-        I'm a Senior Software Engineer with deep expertise in cloud-native Java microservices, event-driven architecture, and platform engineering. I build systems that process millions of transactions daily — with a focus on security, observability, and developer productivity.
-        <br><br>
-        My work spans PCI-compliant API design with OAuth2/OIDC/mTLS, streaming pipelines with Apache Kafka, multi-layer caching with Redis, and SRE practices including chaos engineering and incident response. I also build Agentic AI workflows and MCP-based orchestration servers to automate engineering toil.
-      </p>
-      <div class="stats">
-        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Fortune 500 Companies</span></div>
-        <div class="stat"><span class="stat-num">99.9%+</span><span class="stat-label">Uptime Achieved</span></div>
-        <div class="stat"><span class="stat-num">40%</span><span class="stat-label">Latency Reduction</span></div>
-        <div class="stat"><span class="stat-num">50%</span><span class="stat-label">Deployment Frequency Boost</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2>Skills &amp; Expertise</h2>
-      <div class="skills-wrapper">
-        <div class="skill-col">
-          <h3>Languages</h3>
-          <div class="tags"><span>Java 17/21</span><span>Python</span><span>TypeScript</span><span>SQL</span></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">RV</div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-        <div class="skill-col">
-          <h3>Backend</h3>
-          <div class="tags"><span>Spring Boot</span><span>Microservices</span><span>REST APIs</span><span>Spring Batch</span><span>Apache Kafka</span><span>Event-Driven Architecture</span></div>
-        </div>
-        <div class="skill-col">
-          <h3>Cloud / DevOps</h3>
-          <div class="tags"><span>AWS EKS/EC2/S3/RDS</span><span>Azure AKS</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Jenkins</span><span>GitOps</span></div>
-        </div>
-        <div class="skill-col">
-          <h3>Security / IAM</h3>
-          <div class="tags"><span>OAuth2</span><span>OIDC</span><span>SAML</span><span>JWT</span><span>Okta</span><span>SCIM</span><span>mTLS</span><span>AES/RSA</span><span>PCI-DSS</span></div>
-        </div>
-        <div class="skill-col">
-          <h3>Data / Streaming</h3>
-          <div class="tags"><span>Kafka Streams</span><span>Redis Cluster</span><span>Spring Data JPA</span><span>Flyway</span><span>Batch Pipelines</span></div>
-        </div>
-        <div class="skill-col">
-          <h3>Observability / SRE</h3>
-          <div class="tags"><span>Prometheus</span><span>Grafana</span><span>Splunk</span><span>ELK</span><span>OpenTelemetry</span><span>Jaeger</span><span>Chaos Engineering</span></div>
-        </div>
-        <div class="skill-col">
-          <h3>Frontend</h3>
-          <div class="tags"><span>React.js</span><span>Micro Frontends</span><span>SPA</span></div>
-        </div>
-        <div class="skill-col">
-          <h3>Testing / AI</h3>
-          <div class="tags"><span>JUnit 5</span><span>Mockito</span><span>Cucumber BDD</span><span>Agentic AI</span><span>MCP Servers</span><span>GitHub Copilot</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="timeline">
-
-        <div class="job-card">
-          <div class="job-meta">
-            <span class="company">Mastercard</span>
-            <span class="role">Senior Software Engineer</span>
-            <span class="stack-tags"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>AWS</span><span>Kubernetes</span><span>React</span></span>
-          </div>
-          <ul>
-            <li>Architected cloud-native Spring Boot microservices supporting millions of card transactions daily across global banking partners.</li>
-            <li>Implemented event-driven architecture with Apache Kafka, reducing service latency by <strong>40%</strong>.</li>
-            <li>Engineered PCI-compliant security: card detokenization, mTLS, AES/RSA, OAuth2/OIDC, JWT, RBAC, and Okta SSO/SCIM.</li>
-            <li>Developed React.js micro frontends improving UI performance by <strong>30%</strong>.</li>
-            <li>Deployed on AWS EKS / Azure AKS achieving <strong>99.9%+ uptime</strong>; automated CI/CD boosting deployment frequency by <strong>50%</strong>.</li>
-            <li>Built Agentic AI services and MCP orchestration servers; improved engineering productivity by <strong>25–30%</strong> with GitHub Copilot.</li>
-          </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="name">Ranjith Velpur</h1>
+                <h2 class="title">
+                    <span class="typing-text"></span>
+                </h2>
+                <p class="description">
+                    Senior Java Backend / Cloud Engineer building high-throughput, cloud-native microservices at scale.
+                    Specialized in Spring Boot, Kafka, AWS/Kubernetes, and PCI-compliant security —
+                    delivering 99.9%+ uptime across Mastercard, Nike, and JP Morgan Chase.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/ranjitreddie" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ranjitreddie" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:ranjith@example.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div class="job-card">
-          <div class="job-meta">
-            <span class="company">Nike</span>
-            <span class="role">Software Engineer</span>
-            <span class="stack-tags"><span>Java</span><span>Spring Boot</span><span>AWS</span><span>Kubernetes</span><span>SRE</span></span>
-          </div>
-          <ul>
-            <li>Engineered <em>Cerberus</em> — a cloud-native secrets management platform serving 100+ distributed microservices.</li>
-            <li>Deployed on AWS/Azure Kubernetes with auto-scaling and blue-green deployments achieving <strong>99.9%+ availability</strong>.</li>
-            <li>Optimized cloud costs by <strong>25–30%</strong>; reduced SRE toil by <strong>50%</strong> through CI/CD and Python/Shell automation.</li>
-            <li>Established SRE practices with Prometheus, Grafana, CloudWatch, ELK — reducing incidents by <strong>35%</strong> and MTTR by <strong>40%</strong>.</li>
-          </ul>
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
+    </section>
 
-        <div class="job-card">
-          <div class="job-meta">
-            <span class="company">JP Morgan Chase</span>
-            <span class="role">Software Engineer</span>
-            <span class="stack-tags"><span>Java</span><span>Microservices</span><span>Cloud Foundry</span><span>Redis</span><span>SRE</span></span>
-          </div>
-          <ul>
-            <li>Built mission-critical, low-latency pricing microservices ingesting millions of financial instruments daily for trading and risk systems.</li>
-            <li>Migrated legacy monoliths to GAIA (Pivotal Cloud Foundry), reducing release cycles by <strong>40%</strong>.</li>
-            <li>Engineered multi-layer caching (in-memory + Redis) reducing downstream calls by <strong>40%</strong> for real-time trading.</li>
-            <li>Implemented observability with Prometheus, Grafana, Splunk/ELK, OpenTelemetry/Jaeger — improving MTTD/MTTR by <strong>35–40%</strong>.</li>
-          </ul>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>I'm a Senior Software Engineer with deep expertise in cloud-native Java microservices, event-driven architecture, and platform engineering. I build systems that process millions of transactions daily — with a focus on security, observability, and developer productivity.</p>
+                    <p>My work spans PCI-compliant API design with OAuth2/OIDC/mTLS, streaming pipelines with Apache Kafka, multi-layer caching with Redis, SRE practices including chaos engineering, and Agentic AI workflows with MCP-based orchestration servers to automate engineering toil.</p>
+                    <div class="highlight-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Fortune 500 Companies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99.9%+</div>
+                            <div class="stat-label">Uptime Achieved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">40%</div>
+                            <div class="stat-label">Latency Reduction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50%</div>
+                            <div class="stat-label">Deployment Frequency Boost</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Skills & Experience</h2>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section alt">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <div class="projects-grid">
+            <div class="skills-certs-wrapper">
+                <!-- Skills Column -->
+                <div class="skills-column">
+                    <h3 class="subsection-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon"><i class="fas fa-coffee"></i></div>
+                            <h3>Backend & Languages</h3>
+                            <div class="skill-items">
+                                <span>Java 17/21</span><span>Spring Boot</span><span>Microservices</span>
+                                <span>REST APIs</span><span>Spring Batch</span><span>Python</span>
+                                <span>TypeScript</span><span>SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon"><i class="fas fa-stream"></i></div>
+                            <h3>Event-Driven & Messaging</h3>
+                            <div class="skill-items">
+                                <span>Apache Kafka</span><span>Kafka Streams</span>
+                                <span>Event-Driven Architecture</span><span>Redis Cluster</span>
+                                <span>Caffeine Cache</span><span>Spring Data JPA</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>Cloud / DevOps</h3>
+                            <div class="skill-items">
+                                <span>AWS EKS/EC2/S3/RDS</span><span>Azure AKS</span>
+                                <span>Docker</span><span>Kubernetes</span>
+                                <span>GitHub Actions</span><span>Jenkins</span><span>GitOps</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Security / IAM</h3>
+                            <div class="skill-items">
+                                <span>OAuth2</span><span>OIDC</span><span>SAML</span>
+                                <span>JWT</span><span>Okta</span><span>SCIM</span>
+                                <span>mTLS</span><span>AES/RSA</span><span>PCI-DSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3>Observability / SRE</h3>
+                            <div class="skill-items">
+                                <span>Prometheus</span><span>Grafana</span><span>Splunk</span>
+                                <span>ELK Stack</span><span>OpenTelemetry</span><span>Jaeger</span>
+                                <span>Chaos Engineering</span><span>SLO/SLA</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <h3>Testing & AI</h3>
+                            <div class="skill-items">
+                                <span>JUnit 5</span><span>Mockito</span><span>Cucumber BDD</span>
+                                <span>Agentic AI</span><span>MCP Servers</span>
+                                <span>GitHub Copilot</span><span>JMeter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="project-card">
-          <h3>Card Transaction Microservices Platform</h3>
-          <p>Cloud-native Spring Boot microservices processing millions of card transactions daily with event-driven Kafka pipelines, PCI-compliant security, and 99.9%+ uptime on AWS EKS.</p>
-          <div class="proj-badges"><span>Latency –40%</span><span>PCI-DSS</span></div>
-          <div class="tags"><span>Spring Boot</span><span>Kafka</span><span>AWS EKS</span><span>OAuth2</span></div>
+                <!-- Right Column: Experience + Strengths -->
+                <div class="certs-column">
+                    <h3 class="subsection-title">Experience</h3>
+                    <div class="cert-list">
+                        <div class="cert-card-compact" data-aos="fade-up" data-aos-delay="100">
+                            <div class="cert-icon-compact"><i class="fas fa-building"></i></div>
+                            <div class="cert-info">
+                                <h4>Mastercard</h4>
+                                <p>Senior Software Engineer</p>
+                            </div>
+                        </div>
+                        <div class="cert-card-compact" data-aos="fade-up" data-aos-delay="200">
+                            <div class="cert-icon-compact"><i class="fas fa-building"></i></div>
+                            <div class="cert-info">
+                                <h4>Nike</h4>
+                                <p>Software Engineer</p>
+                            </div>
+                        </div>
+                        <div class="cert-card-compact" data-aos="fade-up" data-aos-delay="300">
+                            <div class="cert-icon-compact"><i class="fas fa-building"></i></div>
+                            <div class="cert-info">
+                                <h4>JP Morgan Chase</h4>
+                                <p>Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title" style="margin-top: 40px;">Core Strengths</h3>
+                    <div class="strengths-list">
+                        <div class="strength-item" data-aos="fade-up">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cloud-Native Microservices at Scale</span>
+                        </div>
+                        <div class="strength-item" data-aos="fade-up">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Event-Driven Architecture & Kafka</span>
+                        </div>
+                        <div class="strength-item" data-aos="fade-up">
+                            <i class="fas fa-check-circle"></i>
+                            <span>PCI-DSS Security & IAM Hardening</span>
+                        </div>
+                        <div class="strength-item" data-aos="fade-up">
+                            <i class="fas fa-check-circle"></i>
+                            <span>SRE & Observability Engineering</span>
+                        </div>
+                        <div class="strength-item" data-aos="fade-up">
+                            <i class="fas fa-check-circle"></i>
+                            <span>High-Throughput Caching Strategies</span>
+                        </div>
+                        <div class="strength-item" data-aos="fade-up">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Agentic AI & MCP Orchestration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-          <h3>Cerberus – Secrets Management Platform</h3>
-          <p>Cloud-native secrets management platform at Nike serving 100+ microservices with secure secret injection, zero-trust auth, and auto-scaling Kubernetes deployments.</p>
-          <div class="proj-badges"><span>100+ services</span><span>Zero-Trust</span></div>
-          <div class="tags"><span>Spring Boot</span><span>Kubernetes</span><span>IAM</span><span>mTLS</span></div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-credit-card"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/ranjitreddie" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Card Transaction Microservices</h3>
+                    <p>Cloud-native Spring Boot microservices processing millions of card transactions daily with event-driven Kafka pipelines, PCI-compliant security, and 99.9%+ uptime on AWS EKS.</p>
+                    <div class="project-impact">
+                        <span><i class="fas fa-bolt"></i> Latency –40%</span>
+                        <span><i class="fas fa-shield-alt"></i> PCI-DSS</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Spring Boot</span><span>Kafka</span><span>AWS EKS</span><span>OAuth2</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-lock"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/ranjitreddie" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Cerberus – Secrets Management</h3>
+                    <p>Cloud-native secrets management platform at Nike serving 100+ distributed microservices with secure secret injection, zero-trust auth, and auto-scaling Kubernetes deployments.</p>
+                    <div class="project-impact">
+                        <span><i class="fas fa-server"></i> 100+ services</span>
+                        <span><i class="fas fa-shield-alt"></i> Zero-Trust</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Spring Boot</span><span>Kubernetes</span><span>IAM</span><span>mTLS</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/ranjitreddie" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>High-Throughput Pricing Engine</h3>
+                    <p>Low-latency pricing microservices at JP Morgan Chase ingesting millions of financial instruments daily with multi-layer Redis caching achieving sub-second response times.</p>
+                    <div class="project-impact">
+                        <span><i class="fas fa-database"></i> Calls –40%</span>
+                        <span><i class="fas fa-tachometer-alt"></i> Sub-second</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Java</span><span>Redis</span><span>Spring Batch</span><span>PCF</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/ranjitreddie" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Agentic AI Workflow Automation</h3>
+                    <p>MCP-based orchestration servers and agentic AI services automating code generation, testing, documentation, and operational tasks — improving engineering productivity by 25–30%.</p>
+                    <div class="project-impact">
+                        <span><i class="fas fa-rocket"></i> Productivity +25%</span>
+                        <span><i class="fas fa-minus-circle"></i> Toil –50%</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Agentic AI</span><span>MCP</span><span>GitHub Copilot</span><span>Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/ranjitreddie" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Multi-Level Caching Architecture</h3>
+                    <p>High-throughput caching with Spring Cache, Redis Cluster, and Caffeine (local + distributed) using cache-aside and write-through patterns — reducing API latency by 30–40% under peak traffic.</p>
+                    <div class="project-impact">
+                        <span><i class="fas fa-bolt"></i> Latency –40%</span>
+                        <span><i class="fas fa-expand-arrows-alt"></i> Horizontal scale</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Redis</span><span>Caffeine</span><span>Spring Boot</span><span>Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-eye"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/ranjitreddie" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>SRE Observability Stack</h3>
+                    <p>Full observability platform with Prometheus, Grafana dashboards, OpenTelemetry/Jaeger distributed tracing, Splunk/ELK log aggregation, and chaos engineering — reducing incidents by 35%.</p>
+                    <div class="project-impact">
+                        <span><i class="fas fa-bell"></i> Incidents –35%</span>
+                        <span><i class="fas fa-clock"></i> MTTR –40%</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Prometheus</span><span>Grafana</span><span>OpenTelemetry</span><span>ELK</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-          <h3>High-Throughput Pricing Engine</h3>
-          <p>Low-latency pricing microservices at JP Morgan Chase ingesting millions of financial instruments daily with multi-layer Redis caching achieving sub-second response times.</p>
-          <div class="proj-badges"><span>Calls –40%</span><span>Sub-second</span></div>
-          <div class="tags"><span>Java</span><span>Redis</span><span>Spring Batch</span><span>PCF</span></div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                <p class="contact-text">
+                    I'm always open to discussing Java/cloud architecture, SRE practices, agentic AI workflows,
+                    or new opportunities. Feel free to reach out!
+                </p>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+
+                <div class="contact-social">
+                    <a href="https://github.com/ranjitreddie" target="_blank" class="social-btn" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ranjitreddie" target="_blank" class="social-btn" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:ranjith@example.com" class="social-btn" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-          <h3>Agentic AI Workflow Automation</h3>
-          <p>MCP-based orchestration servers and agentic AI services for intelligent workflow automation — automating code generation, testing, documentation, and operational tasks.</p>
-          <div class="proj-badges"><span>Productivity +25%</span><span>Toil –50%</span></div>
-          <div class="tags"><span>Agentic AI</span><span>MCP</span><span>GitHub Copilot</span><span>Python</span></div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed &amp; Built by Ranjith Velpur</p>
+            <p class="footer-year">© 2026</p>
         </div>
+    </footer>
 
-        <div class="project-card">
-          <h3>Multi-Level Caching Architecture</h3>
-          <p>High-throughput caching with Spring Cache abstraction, Redis Cluster, and Caffeine (local + distributed) using cache-aside and write-through patterns — reducing API latency by 30–40% under peak traffic.</p>
-          <div class="proj-badges"><span>Latency –40%</span><span>Horizontal scale</span></div>
-          <div class="tags"><span>Redis</span><span>Caffeine</span><span>Spring Boot</span><span>Kubernetes</span></div>
-        </div>
-
-        <div class="project-card">
-          <h3>SRE Observability Stack</h3>
-          <p>Full observability platform with Prometheus, Grafana dashboards, OpenTelemetry/Jaeger distributed tracing, Splunk/ELK log aggregation, and chaos engineering — reducing incidents by 35%.</p>
-          <div class="proj-badges"><span>Incidents –35%</span><span>MTTR –40%</span></div>
-          <div class="tags"><span>Prometheus</span><span>Grafana</span><span>OpenTelemetry</span><span>ELK</span></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container contact-wrap">
-      <h2>Get In Touch</h2>
-      <p>I'm always open to discussing Java/cloud architecture, SRE practices, agentic AI, or new opportunities. Feel free to reach out!</p>
-      <div class="contact-links">
-        <a href="mailto:ranjith@example.com" class="btn-primary">Email Me</a>
-        <a href="https://linkedin.com/in/ranjitreddie" target="_blank" class="btn-outline">LinkedIn</a>
-        <a href="https://github.com/ranjitreddie" target="_blank" class="btn-outline">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>Designed &amp; Built by Ranjith Velpur &nbsp;·&nbsp; © 2026</p>
-  </footer>
-
-  <script>
-    // Sticky nav shadow on scroll
-    window.addEventListener('scroll', () => {
-      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
-    });
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
